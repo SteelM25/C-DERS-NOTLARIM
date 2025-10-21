@@ -13,9 +13,9 @@ int main(){
 
     int deger, birim;
 
-    cout << "Sıcaklık birimi seçiniz: " << endl;
-    cout << "1-C, 2-F";
-    cin >> birim;
+    // cout << "Sıcaklık birimi seçiniz: " << endl;
+    // cout << "1-C, 2-F";
+    // cin >> birim;
 
     
     //? 1.yol
@@ -48,6 +48,7 @@ int main(){
 
     //? 2.yol
 
+    /*
     if(birim==1 || birim == 2){
 
         cout << "Sıcaklık değeri giriniz: " << endl;
@@ -63,7 +64,27 @@ int main(){
     else{
         cout << "Geçerli bir değer giriniz.";
     }
+        */
 
+    //? 3.yol
+
+    cout << "Sıcaklık birimi seçiniz:\n1 - C\n2 - F\n";
+    cin >> birim;
+
+    if (birim == 1 || birim == 2) {
+        cout << "Sıcaklık değeri giriniz: ";
+        cin >> deger;
+
+        bool donmaAltinda = (birim == 1 && deger <= 0) || (birim == 2 && deger <= 32);
+
+        if (donmaAltinda)
+            cout << "\nSıcaklık Donma Noktasının Altında veya Eşit.\n";
+        else
+            cout << "\nSıcaklık Normal.\n";
+    } 
+    else {
+        cout << "Geçerli bir değer giriniz.";
+    }
 
 
 
