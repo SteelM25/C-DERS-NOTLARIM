@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.defaultFormatter": "formulahendry.code-runner",
+    "editor.wordWrap": "on",
+    "editor.defaultFoldingRangeProvider": "formulahendry.code-runner"
+}
