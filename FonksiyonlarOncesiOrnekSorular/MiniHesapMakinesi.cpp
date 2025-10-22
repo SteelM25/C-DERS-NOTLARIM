@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 /*4. İşlem Seçici Mini Hesap Makinesi
@@ -32,7 +31,7 @@ int main(){
         case 4: 
             if(sayi2==0) {cout << "\n\n Sıfıra bölünemez"; break;}
             
-            //? Sonucu küsüratlı bulmak için önce cmath sınıfını eklemeliyiz. Sonra EN AZ 1 İNT DEGERİ AŞAĞIDAKİ GİBİ DOUBLE YAPMALIYIZ.
+            //? Sonucu küsüratlı bulmak için önce cmath sınıfını eklemeliyiz(bazı derleyicilerde gerek yok). Sonra EN AZ 1 İNT DEGERİ AŞAĞIDAKİ GİBİ DOUBLE YAPMALIYIZ.
             cout << "\nİşlemin sonucu: " <<  static_cast<double>(sayi1) / sayi2; break;
             
             
