@@ -10,13 +10,14 @@ Negatif sayı girilene kadar girilen tüm pozitif sayıların ortalamasını hes
 
 int main(){
 
-    int sayi,adet = 0;
-    double toplam = 0;
+    int sayi,adet = 0; //? adet, ortalamayı bulmak için lazım olacak
+    double toplam = 0; // * ortalama küsüratlı olabileceği için double olarak atadım.
 
     do {
         cout << "\n\nLütfen sayi giriniz: ";
         cin >> sayi;
 
+        //! Sayı negatifse döngüden çıkar.
         if(sayi>=0){
 
             toplam+=sayi;
@@ -26,6 +27,7 @@ int main(){
 
     }while (sayi>=0);
 
+    
     if(adet == 0){ //? sayi<0 yazmadım çünkü zaten döngü negatif sayı girilince bitip buraya geliyor.
         cout << "Geçersiz işlem\n";
     }
