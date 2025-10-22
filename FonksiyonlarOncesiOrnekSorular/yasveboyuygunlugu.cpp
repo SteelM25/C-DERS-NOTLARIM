@@ -20,11 +20,13 @@ int main(){
     cout << "\n Boyunuz kaç cm: ";
     cin >> boy;
 
-    if(yas > 18 && boy > 160){
-        cout << "\n Uygun";
-    }
-    else if(yas > 18 || boy > 160){
-        cout << "\n Sınırda";
+    if(yas > 18 || boy > 160){
+        if(yas > 18 && boy > 160){
+            cout << "\n Uygun";
+        }
+        else{
+            cout << "\n Sınırda";
+        }
     }
     else{cout << "\n Uygun değil";}
 
