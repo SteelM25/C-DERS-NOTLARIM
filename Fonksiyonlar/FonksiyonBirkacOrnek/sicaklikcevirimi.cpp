@@ -21,6 +21,6 @@ double dereceToFahrenheit(double c){
 
 int main(){
 
-    cout << endl << dereceToFahrenheit(8);
+    cout << endl << dereceToFahrenheit(33);
 
 }
