@@ -36,6 +36,7 @@ int rastgeleToplam(int adet, int min, int max){
         return toplam;
     }
     
+    //? bir x sayısının y sayısına bölümünden (mod) kalan en fazla y-1 kadar olur. Örneğin y için 8 diyelim. Bir sayının 8 sayısına bölümünden en fazla kalan 7 olur. Bu durumda x sayısı ise 8 + 7 = 15 olur.
     
     return toplam;
     
