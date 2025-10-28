@@ -25,6 +25,8 @@ int rastgeleToplam(int adet, int min, int max){
     if(adet > 0){
 
         for(int i = 1; i <= adet; i++){
+
+            
                             //? bu kısım aslında en fazla (max - min) sayısını üretebileceği anlamına gelir.
             rasgele =min +  (rand() % (max - min + 1)); //! böylece en yüksek ihtimalle max sayısı üretilebilir.
             cout << "oluşturulan sayı: " << rasgele << endl;
