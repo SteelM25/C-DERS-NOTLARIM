@@ -14,7 +14,7 @@ int main(){
 
     const int adet = 4;
     
-    double notAgirlik[] ={0.15, 0.15, 0.30, 0.40};
+    double notAgirlik[adet] ={0.15, 0.15, 0.30, 0.40}; //Köşeli parantez içine bir değer girmezsem dizi miktarını arttırıp azaltabilirim.
     
     double notlar[adet];
     double toplam;
