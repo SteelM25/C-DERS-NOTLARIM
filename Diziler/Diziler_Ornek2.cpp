@@ -12,7 +12,7 @@ Her notu kendi ağırlık yüzdesi ile çarparak toplayınız ve bulduğnuz değ
 
 int main(){
 
-    int adet = 4;
+    const int adet = 4;
     
     double notAgirlik[] ={0.15, 0.15, 0.30, 0.40};
     
