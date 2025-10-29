@@ -19,6 +19,7 @@ int dizi1[3][2];
 int dizi2[3][2];
 int toplam[3][2];
 
+//todo: 2 ayrı iç içe döngü kullanmak yerine bir döngüde 2 tane döngü kullandım. Her seferinde 1.satır 1 ve 2. elaman, 2.satır 1 ve 2 elaman şeklinde isteyecek ama tek döngüde atamayı halletmiş olduk.
 for(int i = 0; i<3; i++){
 
     //? Birinci dizi elemanlarını alalım
