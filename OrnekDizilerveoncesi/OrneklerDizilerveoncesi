@@ -1,0 +1,150 @@
+Elbette! 🎯 Aşağıda, **C++’ta diziler** konusunu ve **önceki temel konuları (fonksiyonlar, döngüler, koşullar, rand(), switch-case, veri tipleri vb.)** kapsayan **10 kaliteli karışık seviye** (kolay → orta → ileri) **soru seti** hazırladım.
+Her soru, öğrenciyi hem düşünmeye hem de C++ mantığını anlamaya yöneltir.
+
+---
+
+## 🧠 **C++ Diziler ve Temel Konular – 10 Soru**
+
+---
+
+### **1. [Kolay] Rastgele Sayı Üretimi ve Karşılaştırma**
+
+Kullanıcıdan iki sayı alın. `rand()` fonksiyonu ile **1 ile 100 arasında** rastgele 10 sayı üretin.
+Her rastgele sayı için:
+
+* Eğer sayı, kullanıcının girdiği iki sayı arasındaysa ekrana “Aralıkta” yazdırın.
+* Aksi halde “Dışında” yazdırın.
+  En sonunda, aralıkta kalan sayıların toplamını ekrana yazdırın.
+
+---
+
+### **2. [Kolay-Orta] Tek Boyutlu Dizi Ortalama Hesaplama**
+
+Kullanıcıdan 5 adet tam sayı alın.
+Bu sayıları bir **diziye** kaydedin ve:
+
+* Dizi elemanlarının ortalamasını bulun.
+* Ortalamadan büyük olan elemanları ekrana yazdırın.
+
+---
+
+### **3. [Orta] En Büyük ve En Küçük Eleman (Fonksiyon Kullanarak)**
+
+Bir fonksiyon yazın:
+
+```cpp
+void findMinMax(int dizi[], int boyut, int &min, int &max);
+```
+
+Fonksiyon, dizideki en küçük ve en büyük değeri `min` ve `max` değişkenlerine aktarsın.
+Ana programda kullanıcıdan 7 sayı alarak diziyi oluşturun ve bu fonksiyonu çağırın.
+
+---
+
+### **4. [Orta] Dizide Arama ve continue Kullanımı**
+
+10 elemanlı bir tam sayı dizisi oluşturun ve içine 1–100 arası rastgele sayılar atayın.
+Kullanıcıdan bir sayı isteyin.
+Dizi içinde o sayı kaç kez geçtiğini bulun.
+
+* Eğer sayı 50’den küçükse, kontrol etmeden `continue` kullanarak atlayın.
+* En sonunda kaç adet eşleşme olduğunu yazdırın.
+
+---
+
+### **5. [Orta] Diziyi Tersine Çeviren Fonksiyon**
+
+Bir fonksiyon tanımlayın:
+
+```cpp
+void reverseArray(int dizi[], int boyut);
+```
+
+Fonksiyon, diziyi **yerinde (in-place)** tersine çevirsin.
+Kullanıcıdan 6 elemanlı bir dizi alın, fonksiyonu çağırın ve sonucu ekrana yazdırın.
+
+---
+
+### **6. [Orta-Zor] İki Boyutlu Dizi – Matris Toplama**
+
+Kullanıcıdan 2 adet 3x3 boyutunda matris alın.
+Bu iki matrisi toplayarak üçüncü bir matris oluşturun ve sonucu matris formatında ekrana yazdırın.
+
+🧩 İpucu:
+
+```cpp
+int A[3][3], B[3][3], C[3][3];
+```
+
+---
+
+### **7. [Zor] Sınıf Notu Hesaplama (Fonksiyon + switch-case + dizi)**
+
+Bir program yazın:
+
+* 5 öğrencinin 3’er sınav notunu alın (2D dizi kullanın: `int notlar[5][3];`)
+* Her öğrencinin ortalamasını hesaplayın.
+* Ortalamaya göre `switch-case` ile harf notunu belirleyin:
+
+  * 90–100 → A
+  * 80–89 → B
+  * 70–79 → C
+  * 60–69 → D
+  * Diğer → F
+    Sonuçları tablo şeklinde ekrana yazdırın.
+
+---
+
+### **8. [Zor] Rastgele Sayılarla Frekans Analizi**
+
+`rand()` fonksiyonuyla **0–9** arasında 100 rastgele sayı üretin.
+Bir dizide bu sayıların frekansını tutun.
+Yani:
+
+```cpp
+frekans[0] → 0 kaç kez geldi
+frekans[1] → 1 kaç kez geldi
+...
+```
+
+En sık geçen sayıyı ve kaç kez tekrarlandığını bulun.
+
+---
+
+### **9. [Zor] Fonksiyonla Ortak Eleman Bulma**
+
+İki farklı diziyi (5 elemanlı) kullanıcıdan alın.
+Bir fonksiyon tanımlayın:
+
+```cpp
+void ortakElemanlar(int d1[], int d2[], int boyut);
+```
+
+Fonksiyon, her iki dizide de bulunan ortak elemanları ekrana yazdırsın.
+Eğer hiç ortak eleman yoksa “Ortak eleman yok” yazsın.
+
+---
+
+### **10. [İleri] 2D Dizi ile Çapraz Toplam Hesabı**
+
+Kullanıcıdan 4x4 boyutunda bir matris alın.
+
+* Ana köşegen (sol üst → sağ alt) ve yan köşegen (sağ üst → sol alt) elemanlarının toplamını bulun.
+* Bu iki toplamı karşılaştırın: hangisi büyükse ekrana belirtin.
+  Örnek:
+
+```
+Ana köşegen toplamı: 45
+Yan köşegen toplamı: 50
+Sonuç: Yan köşegen daha büyük.
+```
+
+---
+
+İstersen bu 10 soruyu:
+
+* ✅ çözümleriyle birlikte detaylı açıklamalı hale getirebilirim
+  veya
+* 🧩 küçük bir **quiz/test PDF** haline getirip çalışma notu olarak düzenleyebilirim.
+
+Hangisini istersin?
