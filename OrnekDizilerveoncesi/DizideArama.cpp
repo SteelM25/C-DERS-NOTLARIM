@@ -28,7 +28,7 @@ int main(){
     cin >> sayi;
 
     //?sayının dizide kaç kez geçtiği bulundu
-    for(int i=0; i < 10; i++){
+    for(int i=0; i < 10; i++){ //*tüm dizi elemanlarını kontrol ediyoruz.
         if(sayi < 5){break;} //continue diyince her seferinde i değerini arttırıp döngüye devam ediyor, sayı sabit olduğu için aynı yeri tekrar tekrar çalıştırıyor. Buna engel olmak için break demek daha verimli olur.
         else if(dizi[i]==sayi){
             sayac++;
