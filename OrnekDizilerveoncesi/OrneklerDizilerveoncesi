@@ -43,11 +43,11 @@ Ana programda kullanıcıdan 7 sayı alarak diziyi oluşturun ve bu fonksiyonu �
 
 ### **4. [Orta] Dizide Arama ve continue Kullanımı**
 
-10 elemanlı bir tam sayı dizisi oluşturun ve içine 1–100 arası rastgele sayılar atayın.
+10 elemanlı bir tam sayı dizisi oluşturun ve içine 1–20 arası rastgele sayılar atayın.
 Kullanıcıdan bir sayı isteyin.
 Dizi içinde o sayı kaç kez geçtiğini bulun.
 
-* Eğer sayı 50’den küçükse, kontrol etmeden `continue` kullanarak atlayın.
+* Eğer sayı 5’ten küçükse, kontrol etmeden `continue` kullanarak atlayın.
 * En sonunda kaç adet eşleşme olduğunu yazdırın.
 
 ---
