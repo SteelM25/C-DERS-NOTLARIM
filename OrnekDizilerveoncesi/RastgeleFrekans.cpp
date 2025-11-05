@@ -17,4 +17,13 @@ int main(){
 
     srand(time(0));
 
+    int dizi[100];
+
+    //? 100 elemanlı 0 ile 9 arası bir dizi oluşturdum.
+    for(int i = 0; i < 100; i++){
+        dizi[i] = (rand() % 10);
+        cout << dizi[i] << " ";
+    }
+    cout << endl;
+
 }
