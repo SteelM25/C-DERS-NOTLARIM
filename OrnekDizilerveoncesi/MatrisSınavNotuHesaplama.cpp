@@ -45,6 +45,7 @@ int main() {
         ortalamalar[i] = toplam / 3.0;
 
         // 3. Switch-case ile harf notu belirle
+        //? 10'a bölerek ve yuvarlayarak sadece rakamlar ile halletmiş olduk(switch case olması gerektiğinden dolayı, case double değer almaz.)
         int ort = static_cast<int>(ortalamalar[i]) / 10; // 90-100 => 9-10 aralığı
         switch (ort) {
             case 10:
