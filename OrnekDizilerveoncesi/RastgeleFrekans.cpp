@@ -24,20 +24,24 @@ int main(){
         dizi[i] = (rand() % 10);
         cout << dizi[i] << " ";
     }
-    cout << endl;
+    cout << endl << endl;
 
-    for(int i = 0; i < 10; i++){ //? sayacın kıyas yapacağı şekilde tüm 100 değer tek tek tutulup kıyaslanıyor.
+    for(int i = 0; i < 10; i++){ //? her bir rakamı temel alarak dizi içerisinde aratıyoruz.
  
-        int toplam = 0;
+        int toplam = 0; //! her yeni değer sayısını tutacak değişkendir. Her sayı atladığında sıfırlanması için iç döngünün dışında olmalıdır.
 
+
+        //*sayacın kıyas yapacağı şekilde tüm 100 değer tek tek alınıp tutulan rakamla kıyaslanıyor.
         for(int a = 0; a < 100; a++){
 
+            //todo: eğer rakam üretilen 100 değer içinde varsa toplam değişkeni arttırılıyor.
             if(i == dizi[a]){
                 toplam++;
             }
 
         }
 
+        //* Her rakam için sorgu bittiğinde onun adedi ekrana çıktı veriliyor.
         cout << i << " elemanı dizide " << toplam << " kere var." << endl;
         
 
