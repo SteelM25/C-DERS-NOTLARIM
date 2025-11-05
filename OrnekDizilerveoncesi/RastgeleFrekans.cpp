@@ -26,4 +26,21 @@ int main(){
     }
     cout << endl;
 
+    for(int i = 0; i < 10; i++){ //? sayacın kıyas yapacağı şekilde tüm 100 değer tek tek tutulup kıyaslanıyor.
+ 
+        int toplam = 0;
+
+        for(int a = 0; a < 100; a++){
+
+            if(i == dizi[a]){
+                toplam++;
+            }
+
+        }
+
+        cout << i << " elemanı dizide " << toplam << " kere var." << endl;
+        
+
+    }
+
 }
