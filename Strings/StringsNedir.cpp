@@ -24,5 +24,25 @@ int main(){
     }
 
     cout << "Uzunluk: " << uzunluk << endl;
+
+//! Modern C++ Tipi String Örneği
+
+    string mystr = "Selamun";
+    mystr.append(" Aleykum"); //? append metodu belirtilen stringe ekleme yapabilmeyi sağlar.
+    cout << mystr << endl;
     
+
+//! C tipi stringi C++ tipine çevirme
+
+    //? yeni bir string değişkeni oluşturup eski tip stringi yeniye atamasını yapıyoruz.
+    string yeniMesaj = string(mesaj);
+
+    yeniMesaj.append(" Musa, Nasılsın?");
+
+    cout << yeniMesaj << endl;
+    
+
+
+
+
 }
