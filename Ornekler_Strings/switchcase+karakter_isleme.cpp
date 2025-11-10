@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 /*Kullanıcıdan bir karakter iste.
