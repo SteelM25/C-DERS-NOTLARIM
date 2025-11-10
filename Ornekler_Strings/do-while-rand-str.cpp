@@ -16,7 +16,7 @@ int main(){
     
     srand(time(0));
     
-    char harf = 'a' + rand() % 26;
+    char harf = 'a' + rand() % 26; // 'a' yerine 97 diyebilirdim ama daha sonra sayıyı rakama dönüştürmem gerekebilirdi.
     
     char tahmin;
     
