@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
 
+    // int* p = new int(7); Böyle de atama yapılabilir.
   int *p = new int; //? Bellekte daha sonra yazılacak int değer için yer rezerv
                     // ediliyor. Atama ve tanımlama ayrı ayrı da olabilir.
 
