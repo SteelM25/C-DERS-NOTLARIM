@@ -4,5 +4,16 @@ using namespace std;
 int main(){
 
     int* p;
+    p = NULL; //? eğer hemen değer atanmayacaksa pointer'a NULL değerini vermek önerilir.
+
+    //Daha sonra kontrol ederek değer atayabiliriz.
+
+    if(p != NULL){ // eğer p'nin adresi NULL değilse içeriğini 5 yap.
+        *p = 5;
+    }
+
+    else{
+        p = new int(5); //?  eğer adresi NULL ise içeriğine 5 değerini ata.
+    }
 
 }
