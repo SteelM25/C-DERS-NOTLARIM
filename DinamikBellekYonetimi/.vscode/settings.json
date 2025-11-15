@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.defaultFormatter": "KylinIdeTeam.kylin-clangd",
+    "editor.wordWrap": "on"
+}
