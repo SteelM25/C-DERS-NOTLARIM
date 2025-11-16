@@ -18,7 +18,7 @@ int main(){
     int *ptr = &x; //todo: Yani x değişkeninin ADRESİNİ ptr değişkeninde tuttuk. Tanımlamayı daha sonra yapabiliriz.
 
     int *ptr2; //* adres tanımlaması, adres ataması yaptık.
-    ptr2 = &y;  //? y değerinin Ram bellekteki değerini ptr2 değerinde tuttuk. & işareti 'address of' anlamında.
+    ptr2 = &y;  //? y değerinin Ram bellekteki adresini ptr2 değerinde tuttuk. & işareti 'address of' anlamında.
 
     //* Bir değişkenin adresini tanımladığımız pointer'ın sahip olduğu değeri almak için yine başına *koyarak çağırırız.
 

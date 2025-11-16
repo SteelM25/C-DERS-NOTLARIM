@@ -4,11 +4,11 @@ using namespace std;
 int main(){
 
     int* p;
-    p = NULL; //? eğer hemen değer atanmayacaksa pointer'a NULL değerini vermek önerilir.
+    p = NULL; //? eğer hemen değer atanmayacaksa pointer ADRESİNE NULL değerini vermek önerilir.
 
     //Daha sonra kontrol ederek değer atayabiliriz.
 
-    if(p != NULL){ // eğer p'nin adresi NULL değilse içeriğini 5 yap.
+    if(p != NULL){ // eğer p'nin adresi NULL değilse içeriğini 4 yap.
         *p = 5;
     }
 

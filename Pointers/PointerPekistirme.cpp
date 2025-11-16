@@ -32,6 +32,7 @@ int main(){
     //? kısa yol (pointer ile)
     int *p = &x; //! Bu yöntem memory açısından çok daha performanslıdır. Binlerce kez tekrar edecek işlemler için tekrar tekrar Bellek işgal etmez.
     ucaginYonunuHesapla(p); // otomatik olarak *p olarak alır. Yani değeri alır.
+    //? burada p üzerine gelirse alınacak değerin tipi Type = int* şeklinde. yani buraya sadece pointer ismini(yıldık olmadan) yazarız.
 
     cout << "Yeni yön bilgisi: " << *p << endl;
 
