@@ -19,7 +19,7 @@ void findMinMax(int dizi[], int boyut){
 
     //?her seferinde en küçük değer hesaplanır ve en küçük ve en büyük değerler belli olur.
     for(int i = 0; i < boyut; i++){
-        enkucuk = std::min(enkucuk,dizi[i]);
+        enkucuk = min(enkucuk,dizi[i]);
         enbuyuk = std::max(enkucuk,dizi[i]);
     }
 
