@@ -7,7 +7,8 @@ int main(){
 
     //Stack Bellek, sadece ilgili süslü parantez içindeki yerel verileri tutar, parantez dışına çıkınca siler. Otomatik yönetilir.
 
-    //Heap Bellek, özellikle new, pointer ile yer rezerv ettiğimizde veriler heap bellekte tutulur, delete ile manuel olarak silmezsek sürekli belleği işgal eder.
+    //Heap Bellek, özellikle new ile yer rezerv ettiğimizde veriler heap bellekte tutulur, delete ile manuel olarak silmezsek sürekli belleği işgal eder.
+    //* new ile değil de normal pointer atamaları stack bellekteki değişken adresiyle eşleştiği için delete demeye gerek yok.
 
     //*Yani;
         //Bellek Yönetimi:
