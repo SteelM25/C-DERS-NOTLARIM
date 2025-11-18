@@ -1,0 +1,165 @@
+# ✅ **Eklemende Fayda Olan Konular (Özet + Açıklama)**
+
+---
+
+## **1️⃣ Stack Bellekte Fonksiyon Çağrısı (Call Stack)**
+
+Stack sadece “yerel değişken” tutmaz; aynı zamanda:
+
+* **Fonksiyon dönüş adresi**
+* **Fonksiyon parametreleri**
+* **Kopyalanan geçici değerler**
+* **Return edilen değerlerin bazı türleri (örneğin küçük POD tipleri)**
+
+bu yapının içinde tutulur.
+
+📌 Önemli Çünkü:
+Stack taşması (**Stack Overflow**) genellikle sonsuz özyineleme (recursive) sonucu olur.
+
+---
+
+## **2️⃣ Heap Bellekte new / delete Uyum Tablosu**
+
+C++'ta **new** ile açılan bellek **delete**,
+**new[]** ile açılan bellek **delete[]** ile silinir.
+
+Yanlış kombinasyon **tanımsız davranış (undefined behavior)** üretir.
+
+```cpp
+int* p = new int;
+delete p;      // doğru
+
+int* arr = new int[10];
+delete[] arr;  // doğru
+```
+
+❌ Bunlar hatalı:
+
+```cpp
+delete[] p;
+delete arr;
+```
+
+---
+
+## **3️⃣ Dangling Pointer ve Memory Leak**
+
+Heap kullanırken en önemli 2 hata tipi:
+
+### **🔸 Memory Leak**
+
+delete unutulursa bellek geri verilmez → program kapanana kadar boş yere yer kaplar.
+
+### **🔸 Dangling Pointer**
+
+Bellek silindikten sonra hâlâ aynı pointer'ı kullanmaya çalışmak.
+
+```cpp
+int* p = new int(5);
+delete p;
+cout << *p;     // ⚠️ undefined behavior
+```
+
+Bunu önlemek için genelde:
+
+```cpp
+p = nullptr;
+```
+
+kullanılır.
+
+---
+
+## **4️⃣ nullptr, NULL ve 0 Farkı**
+
+Modern C++’ta **nullptr** kullanılır.
+
+* `nullptr` → türü belli, güvenli
+* `NULL` → eski C tarzı, makro
+* `0` → tam sayı 0’dır, pointer değildir
+
+---
+
+## **5️⃣ Heap’in Stack’ten Daha Yavaş Olmasının Nedeni**
+
+Çünkü:
+
+* Stack: CPU tarafından otomatik yönetilir (çok hızlı)
+* Heap: İşletim sistemi veya allocator yönetir (yavaş–fragmentation olabilir)
+
+---
+
+## **6️⃣ Stack Sınırlıdır, Heap Çok Daha Büyüktür**
+
+Stack boyutu genellikle:
+
+* Linux/Mac: ~8MB
+* Windows: ~1MB
+
+Heap ise sistem RAM’i kadar büyük olabilir.
+
+Bu yüzden büyük diziler heap’te tutulur, yani pointer ile atanır.:
+
+```cpp
+int arr[1'000'000];       // stack overflow riski
+int* arr = new int[1'000'000];  // heap'te güvenli
+```
+
+---
+
+## **7️⃣ RAII ve Smart Pointer’lar (Modern C++ İçin)**
+
+Heap’i manuel yönetmek hataya çok açıktır.
+Modern C++’ta tercih edilen yöntem:
+
+* `std::unique_ptr`
+* `std::shared_ptr`
+* `std::weak_ptr`
+
+Örnek:
+
+```cpp
+auto p = std::make_unique<int>(10);
+// delete gerekmez
+```
+
+📌 Yeni başlayanlar için new/delete öğrenmek önemlidir ama **modern C++ uygulamalarında** neredeyse hiç kullanılmaz.
+
+---
+
+## **8️⃣ Shallow Copy vs Deep Copy (Özellikle Sınıflarda)**
+
+Eğer bir sınıf heap’te bellek açıyorsa:
+
+* Copy constructor
+* Copy assignment operator
+* Destructor
+
+yazman gerekir. (Rule of 3/5/0)
+
+Örnek olarak:
+
+```cpp
+class Test {
+    int* data;
+public:
+    Test() { data = new int(5); }
+    ~Test() { delete data; }
+};
+```
+
+Bu sınıf **kopyalanırsa büyük hata oluşur**, çünkü aynı pointer iki kez delete edilir.
+
+---
+
+## **9️⃣ new ile oluşturulan değişkenin ömrü paranteze bağlı değildir**
+
+Stack'teki gibi süslü parantezden çıkınca silinmez.
+
+```cpp
+{
+    int* p = new int(7);
+} // p scope dışına çıktı ama *p heap'te duruyor
+```
+
+Bu memory leak’tir.
