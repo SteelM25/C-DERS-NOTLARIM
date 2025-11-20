@@ -12,8 +12,4 @@ int main(){
     // struct içindeki her bir değişkene "üye" (member) denir.
 
     // struct, C++'ta "veri kümeleri" oluşturmak için en temel yapılardan biridir.
-
-
-
-
 }
