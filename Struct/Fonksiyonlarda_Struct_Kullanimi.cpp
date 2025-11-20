@@ -9,7 +9,7 @@ struct Ogrenci {
 
 // & işaretiyle referans almış olduk ve orijinal dosya üzerinde çalışıp düzenleyebiliriz. & işaretini eklemezsek aynı struct'ın kopyası oluşturulur! ve kopya üzerine yapılan değişiklikler orijinal olanı etkilemez. Ayrıca sürekli veri kopyalayarak belleği yorar.
 void ogrenciDurumYazdir(Ogrenci &ogr){
-    ogr.ogrenciNo = 27; // buradan değişiklik yapabiliriz. & ile referansa ulaştık çünkü.
+    //ogr.ogrenciNo = 27; // buradan değişiklik yapabiliriz. & ile referansa ulaştık çünkü.
 
     if(ogr.notOrtalama < 50){
         cout << ogr.isim << " sınıfta kaldı..";
