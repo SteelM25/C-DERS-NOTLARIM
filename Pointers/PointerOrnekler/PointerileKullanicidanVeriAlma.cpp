@@ -9,9 +9,7 @@ int main(){
     int* p = &sayi;
 
     cout << "\nDeğer giriniz: ";
-    cin >> sayi;
-
-    *p = sayi;
-    cout << "\nGirilen sayı: " << sayi << endl;
+    cin >> *p;
+    cout << "\nGirilen sayı: " << *p << endl;
 
 }
