@@ -5,7 +5,8 @@ project(PointerlarileClass LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(PointerlarileClass main.cpp)
+add_executable(PointerlarileClass main.cpp
+    otomobil.h otomobil.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS PointerlarileClass
