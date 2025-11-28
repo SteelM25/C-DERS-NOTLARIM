@@ -9,9 +9,10 @@ Otomobil::Otomobil(string _renk, string _model, int _beygirGucu, int kp) {
     pKapiSayisi = new int(kp);  // *pKapiSayisi = kp;  aynı şey.
 }
 
-//Destructor
+//Destructor (Özellikle destructor amacı; class içinde oluşturulan pointerların delete edilmesidir)
 Otomobil::~Otomobil(){
     cout << "Destructor Çağırıldı" << endl;
+    delete pKapiSayisi;
 }
 
 void Otomobil::ruhsatBilgileriGoster(){
