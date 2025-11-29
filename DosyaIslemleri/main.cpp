@@ -8,10 +8,10 @@ int main()
 {
 
     /*
-    ios::app    var olan dosyanın eski halini silmeden sonuna ekleme yapar.
+    ios::app    var olan dosyanın eski halini silmeden sonuna ekleme yapar. append kısaltmasıdır.
     ios::binary     geniş kapasiteli (mp3, mp4 vs) dosya türleri kopyalamanıza  veya değiştirmemize olanak sağlar. Sadece txt üzerinde çalışacaksak kullanmayabiliriz.
     ios::in     dosya okumak için kullanılır.
-    ios::out    dosya yazmak için kullanılır.
+    ios::out    dosya yazmak için kullanılır. İlgili dosya yoksa oluşturur.
     ios::trunc      açtıktan sonra dosya içeriğini siler.
     ios::ate    dosya yazma işlemine en son kaldığın yerden devam eder, bu olmazsa dosyanın üzerine yazar.
 
@@ -35,10 +35,9 @@ int main()
         file << endl;
         string str = "Merhaba Gardaş";
         file << str;
-        file.close();
+        file.close();   işlem bittikten sonra dosyayı kapattık.
     }
 */
-
     file.open("/home/musa/Masaüstü/Deneme.txt", ios::in | ios::binary);
     if(!file.is_open()){
         cout << "Dosya açılamıyor::";
