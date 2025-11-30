@@ -5,6 +5,9 @@
 #include "kus.h"
 using namespace std;
 
+
+
+
 int main()
 {
     Kus kus("Kanarya");
@@ -19,12 +22,26 @@ int main()
     kopek.uyu();
     kopek.Havla();
 
+    Kopek kopek2("Kınali");
+
+    Kopek* kp = new Kopek("Alabaş");
+
+    // cout << "Köpek Sayısı: " << Kopek::kopekSayisi << endl;
+    cout << "Köpek Sayısı: " << Kopek::getKopekSayisi() << endl;
+
+    delete kp;
+
+    // cout << "Köpek Sayısı: " << Kopek::kopekSayisi << endl;
+    cout << "Köpek Sayısı: " << Kopek::getKopekSayisi() << endl;
+
     cout << endl;
 
     Kedi kedi("Mıno");
     kedi.beslen();
     kedi.uyu();
     kedi.fareYakala();
+
+    cout << Kopek::karesiniHesapla(9) << endl;
 
 
 }
