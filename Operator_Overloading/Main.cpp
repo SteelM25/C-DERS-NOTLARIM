@@ -7,7 +7,7 @@ private:
     double reel, sanal;
 
 public:
-    Complex(double r = 0, double s = 0){
+    Complex(double r = 0, double s = 0){ // Constructor
         reel = r;
         sanal = s;
     }
@@ -66,7 +66,7 @@ int main()
 
     c5.display();
 
-    cout << c3; //   << Global fonksiyonu
+    cout << "Gloabal Örnek: " << c3; //   << Global fonksiyonu
 
 
 
