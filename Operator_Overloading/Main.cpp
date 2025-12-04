@@ -51,24 +51,24 @@ public:
 
 };
 
-int main()
-{
-    Complex c1(2, 3);
-    Complex c2(4, 5);
-    Complex c3 = c1 + c2; // topla
+// int main()
+// {
+    // Complex c1(2, 3);
+    // Complex c2(4, 5);
+    // Complex c3 = c1 + c2; // topla
 
-    Complex c4 = c2 - c1; // çıkar
+    // Complex c4 = c2 - c1; // çıkar
 
-    Complex c5 = c1 * c2; // çarp
+    // Complex c5 = c1 * c2; // çarp
 
-    c3.display();
-    c4.display();
+    // c3.display();
+    // c4.display();
 
-    c5.display();
+    // c5.display();
 
-    cout << "Gloabal Örnek: " << c3; //   << Global fonksiyonu
-
-
+    // cout << "Gloabal Örnek: " << c3; //   << Global fonksiyonu
 
 
-}
+
+
+// }
