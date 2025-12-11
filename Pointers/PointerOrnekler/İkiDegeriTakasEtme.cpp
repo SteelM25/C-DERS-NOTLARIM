@@ -11,7 +11,7 @@ int main(){
     int* p2 = &sayi2;
     
     
-    gecici = *p1;
+    gecici = *p1; // dikkat et *p1 = gecici olmaz. Çünkü *p1 değerini aşağıda değiştiriyorsun.
     
     *p1 = sayi2;
     *p2 = gecici; //? burada normalde *p1 değeri sayi1'e eşitti, ama *p1 değiştiği için sayi1 de değişti. O yüzden buraya sayi1 dersem her iki değer de aynı olur(ikisi de 9 olur.) O yüzden geçici bir değere *p1'in İLK DEĞERİNİ ATADIM VE *p2'ye ilk değeri atamış oldum.
