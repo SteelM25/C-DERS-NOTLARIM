@@ -26,15 +26,12 @@ void bilgileriAl(Ogrenci* dizi, int adet){
 
         cout << "Öğrenci isim: ";
         getline(cin,dizi[i].ad);
-        cin.ignore();
 
         cout << "Öğrenci soyisim: ";
         getline(cin,dizi[i].soyad);
-        cin.ignore();
 
         cout << "Not 1: ";
         cin >> dizi[i].not1;
-        cin.ignore();
 
         cout << "Not 2: ";
         cin >> dizi[i].not2;
