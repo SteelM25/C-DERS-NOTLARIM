@@ -57,7 +57,7 @@ public:
     }
 };
 
-int main()
+int main2()
 {
     // Dikkat et tüm değer çiftleri aynı türdendir!!
     cout << topla(4.9, 9.3) << endl;
