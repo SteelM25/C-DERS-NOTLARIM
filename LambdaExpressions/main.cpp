@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Klasik bir fonksiyon yazmak için önce bir isim tanımlamak yerine, kodun içinde, anonim olarak hızlıca oluşturabileceğiniz bir mini fonksiyondur.
+// Lambda Expression klasik bir fonksiyon yazmak için önce bir isim tanımlamak yerine, kodun içinde, anonim olarak hızlıca oluşturabileceğiniz bir mini fonksiyondur.
 // Genelde kısa ve tek seferlik işlemler için tercih edilir.
 // Hangi metod içinde oluşturulursa sadece o metod içinde kullanılabilir. Mesela main içinde oluşturulursa sadece main içindek kullanılabilir.
 
