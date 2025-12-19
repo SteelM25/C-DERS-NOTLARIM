@@ -3,7 +3,7 @@ using namespace std;
 
 // Lambda Expression klasik bir fonksiyon yazmak için önce bir isim tanımlamak yerine, kodun içinde, anonim olarak hızlıca oluşturabileceğiniz bir mini fonksiyondur.
 // Genelde kısa ve tek seferlik işlemler için tercih edilir.
-// Hangi metod içinde oluşturulursa sadece o metod içinde kullanılabilir. Mesela main içinde oluşturulursa sadece main içindek kullanılabilir.
+// Hangi metod içinde oluşturulursa sadece o metod içinde kullanılabilir. Mesela main içinde oluşturulursa sadece main içinde kullanılabilir.
 
 //Yapısı:
 /*
@@ -14,7 +14,7 @@ using namespace std;
 */
 // captures: Dışarıdaki yerel değişkenleri lambda içine nasıl alacağınızı belirler
 // parametreler: Normal fonksiyondaki parametre listesi gibidir.
-// donus_turu: İsteğe bağlıdır; yazmaya gerek kalmayabilir, derleyici otomatik çıkarır
+// donus_turu: İsteğe bağlıdır; yazmaya gerek kalmayabilir, derleyici otomatik çıkarır. Tüm koşullardaki dönüş türü aynı olursa yazmaya gerek kalmaz. Ama farklı koşullar farklı dönüş türleri içerirse fonksiyonun dönüş türü belirtilmelidir.
 // fonksiyon gövdesi: İstediğiniz işlemleri burada yaparsınız (tek satır veya çok satır olabilir)
 
 int main()
