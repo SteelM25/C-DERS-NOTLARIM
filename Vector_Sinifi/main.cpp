@@ -5,7 +5,7 @@ using namespace std;
 
 // Vektör, elemanları blok halinde ve indeksli bir şekilde tuttuğu için daha düzenli ve daha hızlı eleman erişimi sunar(list'e kıyasla)
 
-// Eleman silme kısmında list direkt olarak elemanı siler ve bu diğerlerini etkilemeze. Ama vektör içinde bir eleman silindiğinde kendisinden sonraki tüm elemanlar bir sola kayar, yani hepsinin indeks değeri değişir, bu da gereksiz sistem yorar.
+// Eleman silme kısmında list direkt olarak elemanı siler ve bu diğerlerini etkilemez. Ama vektör içinde bir eleman silindiğinde kendisinden sonraki tüm elemanlar bir sola kayar, yani hepsinin indeks değeri değişir, bu da gereksiz sistem yorar.
 
 // Yani aradan eleman silme işlemi sık yapılıyorsa list kullanılması daha iyidir.
 
