@@ -105,6 +105,7 @@ int main()
         cout << "2- Personel Listele\n";
         cout << "3- Personel Ara\n";
         cout << "4- Personel Sil\n";
+        cout << "5- Çıkış\n";
         cin >> secim;
 
         switch(secim){
@@ -129,19 +130,6 @@ int main()
         }
 
     }while(secim != 5);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     return 0;
