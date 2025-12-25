@@ -1,0 +1,38 @@
+Midterm Exam: Vectors and Object-Oriented Programming in C++
+
+--Personel Yönetim Sistemi--
+
+Aşağıdaki talimatları takip ederek bir Personel Yönetim Sistemi uygulayın. Bu sistem, personelleri bir vektörde tutacak ve çeşitli işlemleri gerçekleştirecektir.
+
+1-) Personel Sınıfı:
+- Personel adında bir sınıf oluşturun.
+- Sınıf aşağıdaki özel üye değişkenleri içermelidir.:
+    -int personelNo
+    -string isim (ad ve soyad)
+    -string kadro
+
+-Sınıfın şu üye fonkiyonları olmalıdır:
+    -Constructor: Üye değişkenleri başlatmak için kullanılacak.
+    -void print() const: Personel bilgilerini ekrana yazacak.
+    -Getter metotlar: Her üye değişken için (getPersonelNo, getIsim, getKadro).
+
+2-) Vektör Kullanımı:
+-Tüm personel kayıtlarını tutmak için bir vector<Personel> kullanın.
+-Aşağıdaki işlemleri gerçekleştiren fonkiyonlar yazın.
+    -Personel Ekle: Kullanıcıdan personel bilgilerini alıp vektöre ekleyen bir fonksiyon.
+    -Personel Listele: Vektördeki tüm personelleri listeleyen bir fonksiyon.
+    -Personel Ara: Kullanıcının girdiği personelNo değerine göre bir personeli arayan bir fonksiyon. Eğer personel bulunursa, bilgilerini ekrana yazdırın.
+    -Personel Sil: Kullanıcının girdiği personelNo değerine göre vektörden bir personeli silen bir fonksiyon.
+
+3-) Konsol Arayüzü:
+-Kullanıcıya aşağıdaki menüyü sunun ve seçimine göre ilgili işlemi gerçekleştirin.
+
+---Personel Yönetim Sistemi---
+Seçiminizi Yapınız:
+1. Personel Ekle
+2. Personel Listele
+3. Personel Ara
+4. Personel Sil
+5. Çıkış
+
+-Kullanıcı 5 seçeneğine basana kadar işlemleri döngüde tekrarlayını.
