@@ -11,7 +11,11 @@ int main()
 {   //  key          ,      value
     //öğrenci okul no, not ortalaması
 
-    map<int, float> mOgrenciNotlari;
+    // map<int, float> mOgrenciNotlari; // varsayılan olarak değerler küçükten büyüğe sıralanır.
+
+    //eğer değiştirmek istersek:
+
+    map<int, float, greater<int>> mOgrenciNotlari; // Şimdi içindeki değerler büyükten küçüğe doğru sıralanır.
 
     //Ekleme
     mOgrenciNotlari[101] = 99.2;
@@ -30,5 +34,34 @@ int main()
         cout << "Ogrenci No: " << ogrenci.first << ", Not ortalaması: " << ogrenci.second << "\n";
     }
 
+    //Search işlemi
+
+    int arananOgrenciNo = 109;
+
+    // end() kavramı tüm map listesinin en sonundaki default değerdir. eğer istenen değer find() ile aranıp bulunmazsa o zaman dönüş end() olur. Bu şart bloğunda eğer aranan değer end() değilse yani varsa diyoruz.
+    if(mOgrenciNotlari.find(arananOgrenciNo) != mOgrenciNotlari.end()){
+        cout << "\n" << arananOgrenciNo << " numaralı ogrencinin not ortalaması: " << mOgrenciNotlari[arananOgrenciNo] << endl;
+    }
+    else{
+        cout << "\n" << arananOgrenciNo << " numaralı ogrenci bulunamadı..\n";
+    }
+
+    //Silme işlemi
+
+    int sil = 100;
+
+    mOgrenciNotlari.erase(sil);
+    cout << sil << " numaralı öğrenci silindi..\n";
+
+    for(const auto& a : mOgrenciNotlari){
+        cout << "Ogrenci no: " << a.first << ", Not ortalaması: " << a.second << endl;
+    }
+
+    // aynı key ile yeni kayıt
+
+    mOgrenciNotlari[101] = 22.9; // var olan key'in değeri değişti.
+    cout << "Güncel değer: " << mOgrenciNotlari[101] << endl;
+
+    mOgrenciNotlari[222] = 98.2; // yeni bir key ve değer eklendi
 
 }
