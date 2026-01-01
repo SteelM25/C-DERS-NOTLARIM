@@ -13,7 +13,7 @@ int main()
 
     // map<int, float> mOgrenciNotlari; // varsayılan olarak değerler küçükten büyüğe sıralanır.
 
-    //eğer değiştirmek istersek:
+    //eğer sıralama biçimini değiştirmek istersek:
 
     map<int, float, greater<int>> mOgrenciNotlari; // Şimdi içindeki değerler büyükten küçüğe doğru sıralanır.
 

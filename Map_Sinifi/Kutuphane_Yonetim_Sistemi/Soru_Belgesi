@@ -29,6 +29,6 @@ Sisteminiz aşağıdaki işlemleri gerçekleştirebilmelidir
 
 Değerlendirme Kriterleri
 
-1-) Kitap bilgilerini birr sınıf kullanarak oluşturmanız gerekmektedir.
+1-) Kitap bilgilerini bir sınıf kullanarak oluşturmanız gerekmektedir.
 2-) Kitap ID ve kitap bilgilerini saklamak için map kullanmalısınız.
 3-) Kullanıcıdan sürekli giriş alacak şekilde bir menü döngüsü tasarlayın.
