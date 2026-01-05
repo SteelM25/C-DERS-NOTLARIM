@@ -35,15 +35,47 @@ void ogrenciEkle(list<Ogrenci>* lst){
     lst->push_back(ogr);
 }
 
-void showList(){
+void showList(list<Ogrenci>* lst){
+    list<Ogrenci> :: iterator it;
 
+    for(it= lst->begin(); it != lst->end(); it++){
+        it->bilgileriYaz();
+    }
+    cout << endl;
 }
 
-void ogrenciSil(){
+void ogrenciSil(list<Ogrenci>* lst){
+    int id;
+    cout << "Silmek istediğiniz Öğrenci ID: ";
+    cin >> id;
 
+    for(auto it = lst->begin(); it != lst->end(); ++it){
+        if(it->getId() == id){
+            lst->erase(it);
+            cout << "Öğrenci silindi.\n";
+            return;
+        }
+    }
+
+    cout << "Öğrenci bulunamadı.\n";
 }
 
-void ogrenciAra(){
+
+void ogrenciAra(list<Ogrenci>* lst){
+    int id;
+    cout << "Bulmak istediğiniz Öğrenci ID: ";
+    cin >> id;
+
+    list<Ogrenci>::iterator it;
+
+    for(it = lst->begin(); it != lst->end(); it++){
+        if(it->getId() == id){
+            it->bilgileriYaz();
+            return;
+        }
+    }
+
+    cout << "Öğrenci Bulunamadı..\n";
 
 }
 
@@ -58,13 +90,14 @@ int main()
         cout << "\nYapmak istediğiniz işlemi seçiniz: ";
         cin >> secim;
 
-        if(secim == 1) ogrenciEkle();
-        else if(secim == 2) showList();
-        else if(secim == 3) ogrenciSil();
-        else if(secim == 4) ogrenciAra();
+        if(secim == 1) ogrenciEkle(ogrenciList);
+        else if(secim == 2) showList(ogrenciList);
+        else if(secim == 3) ogrenciSil(ogrenciList);
+        else if(secim == 4) ogrenciAra(ogrenciList);
         else if(secim == 5) {
             cout << "\nÇıkış yapılıyor...";
-            break;}
+            break;
+            }
 
         else{
             cout << "Geçersiz bir değer...";
@@ -73,7 +106,7 @@ int main()
     }while(secim != 5);
 
 
-
+    delete ogrenciList;
 
     return 0;
 }
