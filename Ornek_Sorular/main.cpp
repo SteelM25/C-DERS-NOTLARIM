@@ -32,16 +32,20 @@ void ciftKaresi(int a[], int uzunluk){
 
 int main()
 {
-    //Diziyi 5 elemanlı yapıp elemanlarını kullanıcıdan almak istiyorum.
-    int dizi[5];
+    //Dizi elemanlarını kullanıcıdan almak istiyorum.
+    int boyut;
+
+    cout << "Dizi kaç elemanlı olsun: ";
+    cin >> boyut;
+    int dizi[boyut];
 
     //Elemanları kullanıcıdan aldık.
-    for(int i = 0; i < 5; i++){
+    for(int i = 0; i < boyut; i++){
         cout << "Dizinin " << i + 1 << ". elemanını giriniz: ";
         cin >> dizi[i];
     }
 
-    ciftKaresi(dizi,5);
+    ciftKaresi(dizi,boyut);
 
 
 
