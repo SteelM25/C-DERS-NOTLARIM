@@ -7,32 +7,49 @@ using namespace std;
 
 int main()
 {
-    int adet, duzDizi[adet], tersDizi[adet];
+    // int adet, duzDizi[adet], tersDizi[adet];
 
-    cout << "Sayı adedi: ";
-    cin >> adet;
+    // cout << "Sayı adedi: ";
+    // cin >> adet;
 
-    //Kullanıcıdan sayıları aldık ve diziye ekledik.
-    for(int i = 0; i < adet; i++){
-        cout << i + 1 << ". sayıyı giriniz: ";
-        cin >> duzDizi[i];
+    // //Kullanıcıdan sayıları aldık ve diziye ekledik.
+    // for(int i = 0; i < adet; i++){
+    //     cout << i + 1 << ". sayıyı giriniz: ";
+    //     cin >> duzDizi[i];
+    // }
+
+    // int sayac = 0; // Yeni dizinin indeks sayacı olarak kullandım, her atamada değerini arttırdım.
+
+    // //Yeni diziyi oluşturduk.
+    // for(int i = adet - 1; i >= 0; i--){
+    //     tersDizi[sayac] = duzDizi[i];
+    //     sayac++;
+    // }
+
+    // cout << "\n\n---Girilen dizinin ters hali---\n\n";
+    // for(int a = 0; a < adet; a++){
+    //     cout << "   " <<  tersDizi[a] << "  ";
+    // }
+
+
+    //2. Yol
+
+    int n;
+    cout << "Eleman sayısı: ";
+    cin >> n;
+
+    int* dizi = new int[n];
+
+    for(int i = 0; i < n; i++){
+        cout << i + 1 << ". elemanı giriniz: ";
+        cin >> dizi[i];
     }
 
-    int sayac = 0; // Yeni dizinin indeks sayacı olarak kullandım, her atamada değerini arttırdım.
-
-    //Yeni diziyi oluşturduk.
-    for(int i = adet - 1; i >= 0; i--){
-        tersDizi[sayac] = duzDizi[i];
-        sayac++;
+    for(int i = n - 1; i >= 0; i--){
+        cout << dizi[i] << " ";
     }
 
-    cout << "\n\n---Girilen dizinin ters hali---\n\n";
-    for(int a = 0; a < adet; a++){
-        cout << "   " <<  tersDizi[a] << "  ";
-    }
-
-
-
+    delete[] dizi;
 
 
 }
