@@ -1,15 +1,14 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(Ornek_Sorular LANGUAGES CXX)
+project(Sayi_Dizisini_Tersine_Cevirme LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(Ornek_Sorular main.cpp)
+add_executable(Sayi_Dizisini_Tersine_Cevirme main.cpp)
 
 include(GNUInstallDirs)
-install(TARGETS Ornek_Sorular
+install(TARGETS Sayi_Dizisini_Tersine_Cevirme
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
-add_subdirectory(Sayi_Dizisini_Ters_Cevirme)
