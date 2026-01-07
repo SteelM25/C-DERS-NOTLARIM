@@ -1,0 +1,45 @@
+Sizden C++ Nesne Yönelimli Programlama bilgilerinizi kullanarak bankacılık işlemleri için bir class yazmanız isteniyor. Sınıfınızda tutulacak veriler:
+
+    Hesap sahibinin adı
+    Hesap numarası
+    Bakiye
+
+Yazacağınız sınıfın aşağıdaki işlemleri yapabilmesi isteniyor:
+
+    Hesapların ilk değer olarak bakiyesinin 0 atanması gerekir.(constructor varsayılan değer)
+    Hesaba para yatırılabilir.
+    Hesaptan para çekilebilir.
+    Hesap detay bilgisi görüntülensin.(ad, hesap no, bakiyesi)
+
+Sınıfınızı yazdıktan sonra main içerisinde bu sınıfı kullanarak aşağıdaki kişiler için bir hesap oluşturun:
+
+Ad: Ali Kayahan
+Hesap no: 172123
+Bakiye: 250,75
+
+Ad: Berna Ozan
+Hesap no: 174153
+Bakiye: 0
+
+- Ali Kayahan hesabının bir nesnesini oluşturup 200₺ para çekme işlemi yapın. Son olarak da hesap detay bilgilerini görüntüleyin.
+
+- Berna Ozan'ın hesabından 100₺ çekmeye çalışın. Sonra Berna Ozan'ın hesap detay bilgilerini ekrana yazdırın.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
