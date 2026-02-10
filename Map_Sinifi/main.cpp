@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {   //  key          ,      value
-    //öğrenci okul no, not ortalaması
+    //öğrenci okul no,      not ortalaması
 
     // map<int, float> mOgrenciNotlari; // varsayılan olarak değerler küçükten büyüğe sıralanır.
 
